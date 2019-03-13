@@ -7,12 +7,18 @@
 //
 
 import UIKit
-
+import SkeletonView
 class ViewController: UIViewController {
 
+   
+    @IBAction func down(_ sender: Any) {
+        let animation = SkeletonAnimationBuilder().makeSlidingAnimation(withDirection: .topBottom)
+        view.showAnimatedGradientSkeleton(animation: animation)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
 

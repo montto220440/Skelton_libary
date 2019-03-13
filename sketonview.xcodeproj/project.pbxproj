@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BC2A7F789A4172DF0F88813 /* Pods_sketonview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56381EACABA6955338C5B118 /* Pods_sketonview.framework */; };
 		84E496F32238E6B1002FCC1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E496F22238E6B1002FCC1C /* AppDelegate.swift */; };
 		84E496F52238E6B1002FCC1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E496F42238E6B1002FCC1C /* ViewController.swift */; };
 		84E496F82238E6B1002FCC1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E496F62238E6B1002FCC1C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56381EACABA6955338C5B118 /* Pods_sketonview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sketonview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E496EF2238E6B1002FCC1C /* sketonview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sketonview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E496F22238E6B1002FCC1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E496F42238E6B1002FCC1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		84E496F92238E6B5002FCC1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E496FC2238E6B5002FCC1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E496FE2238E6B5002FCC1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF123FB1EA82F21016CB0CFA /* Pods-sketonview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sketonview.release.xcconfig"; path = "Target Support Files/Pods-sketonview/Pods-sketonview.release.xcconfig"; sourceTree = "<group>"; };
+		D45EF22A32DBA32C0EA06EFA /* Pods-sketonview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sketonview.debug.xcconfig"; path = "Target Support Files/Pods-sketonview/Pods-sketonview.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC2A7F789A4172DF0F88813 /* Pods_sketonview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AECBDDEF735BBD8931C68FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D45EF22A32DBA32C0EA06EFA /* Pods-sketonview.debug.xcconfig */,
+				AF123FB1EA82F21016CB0CFA /* Pods-sketonview.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		565E0D5D011498F61BD5E0FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56381EACABA6955338C5B118 /* Pods_sketonview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84E496E62238E6B1002FCC1C = {
 			isa = PBXGroup;
 			children = (
 				84E496F12238E6B1002FCC1C /* sketonview */,
 				84E496F02238E6B1002FCC1C /* Products */,
+				4AECBDDEF735BBD8931C68FB /* Pods */,
+				565E0D5D011498F61BD5E0FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84E497012238E6B5002FCC1C /* Build configuration list for PBXNativeTarget "sketonview" */;
 			buildPhases = (
+				D4AC984A5F74A15EF803BF6C /* [CP] Check Pods Manifest.lock */,
 				84E496EB2238E6B1002FCC1C /* Sources */,
 				84E496EC2238E6B1002FCC1C /* Frameworks */,
 				84E496ED2238E6B1002FCC1C /* Resources */,
+				1C759149E487DD8FDD760946 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C759149E487DD8FDD760946 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sketonview/Pods-sketonview-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sketonview/Pods-sketonview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4AC984A5F74A15EF803BF6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sketonview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84E496EB2238E6B1002FCC1C /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		84E497022238E6B5002FCC1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D45EF22A32DBA32C0EA06EFA /* Pods-sketonview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +372,7 @@
 		};
 		84E497032238E6B5002FCC1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF123FB1EA82F21016CB0CFA /* Pods-sketonview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
